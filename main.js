@@ -173,9 +173,9 @@ const kata12P = document.createElement('p')
 parentElement.append(kata12P)
 let evenArray = []
 let oddArray = []
-for (let position = 0; position < sampleArray.length; position ++) {
+for (let position = 0; position < sampleArray.length; position++) {
     let possibleNumber = sampleArray[position]
-    if (possibleNumber%2 == 0) {
+    if (possibleNumber % 2 == 0) {
         evenArray.push(' ' + possibleNumber)
     } else {
         oddArray.push(' ' + possibleNumber)
@@ -200,7 +200,7 @@ parentElement.append(kata14Heading)
 const kata14P = document.createElement('p')
 parentElement.append(kata14P)
 let squareArray = []
-for (let position = 0; position < sampleArray.length; position ++) {
+for (let position = 0; position < sampleArray.length; position++) {
     let squareNumber = sampleArray[position]
     squareArray.push(squareNumber * squareNumber)
 }
@@ -227,8 +227,8 @@ parentElement.append(kata16Heading)
 const kata16P = document.createElement('p')
 parentElement.append(kata16P)
 let totalSampleArray = 0
-for (let position = 0; position <= sampleArray.length; position += 1) {
-    totalSampleArray = position + totalSampleArray
+for (let position = 0; position < sampleArray.length; position += 1) {
+    totalSampleArray += sampleArray[position]
 }
 kata16P.append(totalSampleArray)
 
